@@ -6,7 +6,8 @@ plotly==5.17.0
 gunicorn==21.2.0
 numpy==1.26.4
 pandas==2.2.2
-geopandas==0.14.3
-fiona==1.9.5
-shapely>=2
-pyproj>=3
+geopandas==0.13.2
+fiona==1.9.4
+pyproj==3.6.0
+shapely==2.0.1
+rtree==1.0.1
