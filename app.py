@@ -79,7 +79,7 @@ def update_map(selected_county):
         center = {"lat": 42.36, "lon": -71.0}
         color_scale = "Blues"
 
-    fig = px.choropleth_map(
+    fig = px.choropleth_mapbox( # choropleth_map used locally(new), choropleth_mapbox (depreciated)
         gdf,
         geojson=geojson,
         locations='GEOID',  # must match the GeoJSON properties key
@@ -88,7 +88,7 @@ def update_map(selected_county):
         center=center,
         zoom=8.5,
         opacity=0.6,
-        map_style="carto-positron",
+        mapbox_style="carto-positron", #map_style used locally
         color_continuous_scale=color_scale
     )
 
@@ -117,7 +117,7 @@ def update_demo_map(selected_county, selected_demo):
         center = {"lat": 42.36, "lon": -71.0}
         color_scale = "Blues"
 
-    fig = px.choropleth_map(
+    fig = px.choropleth_mapbox(
         gdf,
         geojson=geojson,
         locations=gdf.index,
@@ -125,7 +125,7 @@ def update_demo_map(selected_county, selected_demo):
         center=center,
         zoom=8.5,
         opacity=0.6,
-        map_style="carto-positron",
+        mapbox_style="carto-positron",
         color_continuous_scale=color_scale
     )
 
