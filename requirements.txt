@@ -12,3 +12,4 @@ pyproj==3.6.0
 shapely==2.0.1
 rtree==1.0.1
 flask==2.3.3
+plotly==5.17.0
